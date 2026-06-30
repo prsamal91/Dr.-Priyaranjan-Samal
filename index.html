@@ -7,26 +7,40 @@
 <title>Dr. Priyaranjan Samal | Faculty Homepage</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
+*{
     margin:0;
     padding:0;
-    line-height:1.6;
-    background:#f4f6f8;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:#f5f7fa;
     color:#333;
+    line-height:1.7;
 }
 
 header{
-    background:#003366;
+    background:#0d3b66;
     color:white;
+    padding:50px 20px;
     text-align:center;
-    padding:40px 20px;
+}
+
+header h1{
+    font-size:2.8rem;
+}
+
+header p{
+    font-size:1.1rem;
 }
 
 nav{
-    background:#00509e;
+    background:#145da0;
+    padding:15px;
     text-align:center;
-    padding:10px;
+    position:sticky;
+    top:0;
 }
 
 nav a{
@@ -37,33 +51,77 @@ nav a{
 }
 
 .container{
-    width:85%;
+    width:90%;
+    max-width:1100px;
     margin:auto;
     padding:20px;
 }
 
-section{
+.section{
     background:white;
     margin:20px 0;
-    padding:20px;
-    border-radius:8px;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 h2{
-    color:#003366;
-}
-
-footer{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
+    color:#0d3b66;
+    margin-bottom:15px;
+    border-bottom:2px solid #145da0;
+    padding-bottom:5px;
 }
 
 ul{
-    padding-left:20px;
+    padding-left:25px;
+}
+
+.stats{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:#eef4fb;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
+    min-width:180px;
+}
+
+.card h3{
+    color:#0d3b66;
+    font-size:2rem;
+}
+
+footer{
+    background:#0d3b66;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+.publication{
+    margin-bottom:12px;
+}
+
+.contact a{
+    color:#145da0;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+    nav a{
+        display:block;
+        margin:8px 0;
+    }
+
+    .stats{
+        flex-direction:column;
+    }
 }
 </style>
 </head>
@@ -72,86 +130,171 @@ ul{
 
 <header>
     <h1>Dr. Priyaranjan Samal</h1>
-    <p>Assistant Professor | Department of Mechanical Engineering</p>
-    <p>KL University, Vijayawada</p>
+    <p>Assistant Professor, Department of Mechanical Engineering</p>
+    <p>K L Deemed to be University, Andhra Pradesh, India</p>
 </header>
 
 <nav>
-    <a href="#education">Education</a>
+    <a href="#about">About</a>
     <a href="#research">Research</a>
     <a href="#teaching">Teaching</a>
     <a href="#publications">Publications</a>
+    <a href="#awards">Awards</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
 
-<section id="education">
-    <h2>About Me</h2>
-    <p>
-        I am an Assistant Professor in the Department of Mechanical Engineering.
-        My research focuses on composite materials, materials characterization, Wear & Tribology, and advanced manufacturing.
-        <ul>
-        <li>PhD- (2022) Indian Institute of Technology Bhubaneswar </li>
-        <li>M.Tech. (2016) Veer Surendra Sai University of Technology, Burla </li>
-        <li>B.Tech. (2012) Biju Patnaik Univeristy of Technology, Rourkela </li>
-    </ul>
-    </p>
+<section class="section" id="about">
+<h2>About Me</h2>
+<p>
+I am an Assistant Professor in the Department of Mechanical Engineering at
+K L Deemed to be University. I obtained my Ph.D. in Mechanical Engineering
+from IIT Bhubaneswar. My research focuses on Metal Matrix Composites,
+Tribology, Wear Analysis, Composite Materials, Manufacturing Processes,
+Modeling and Optimization.
+</p>
 </section>
 
-<section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-        <li>Molecular Dynamics Simulations</li>
-        <li>Materials Modeling</li>
-        <li>Mechanical Behavior of Materials</li>
-        <li>Computational Mechanics</li>
-        <li>Advanced Manufacturing</li>
-    </ul>
+<section class="section">
+<h2>Research Metrics</h2>
+
+<div class="stats">
+<div class="card">
+<h3>1800+</h3>
+<p>Google Scholar Citations</p>
+</div>
+
+<div class="card">
+<h3>20</h3>
+<p>h-index</p>
+</div>
+
+<div class="card">
+<h3>53+</h3>
+<p>Research Publications</p>
+</div>
+
+<div class="card">
+<h3>Top 2%</h3>
+<p>World Researcher Ranking</p>
+</div>
+</div>
+
 </section>
 
-<section id="teaching">
-    <h2>Teaching</h2>
-    <ul>
-        <li>Engineering Mechanics</li>
-        <li>Strength of Materials</li>
-        <li>Manufacturing Processes</li>
-        <li>Finite Element Analysis</li>
-    </ul>
+<section class="section" id="research">
+<h2>Research Interests</h2>
+
+<ul>
+<li>Metal Matrix Composites</li>
+<li>Polymer Matrix Composites</li>
+<li>Wear and Tribology</li>
+<li>Modeling and Optimization</li>
+<li>Advanced Manufacturing</li>
+<li>Materials Characterization</li>
+</ul>
+
 </section>
 
-<section id="publications">
-    <h2>Selected Publications</h2>
+<section class="section" id="teaching">
+<h2>Teaching</h2>
 
-    <p>
-        Author1, Author2, Your Name,
-        "Title of Research Paper",
-        Journal Name, 2025.
-    </p>
+<ul>
+<li>Mechanics of Solids</li>
+<li>Machine Design</li>
+<li>Mechanics of Composite Materials</li>
+<li>Basic Manufacturing Processes</li>
+</ul>
 
-    <p>
-        Author1, Your Name,
-        "Another Research Paper",
-        Journal Name, 2024.
-    </p>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
+<section class="section" id="publications">
+<h2>Selected Publications</h2>
 
-    <p><strong>Email:</strong> yourname@university.edu</p>
+<div class="publication">
+1. Recent Progress in Aluminum Metal Matrix Composites: A Review on Processing,
+Mechanical and Wear Properties, Journal of Manufacturing Processes, 2020.
+</div>
 
-    <p><strong>Office:</strong> Department of Mechanical Engineering</p>
+<div class="publication">
+2. Reinforcing Effect of Multi-Walled Carbon Nanotubes on AA5052 Composites,
+Ceramics International, 2022.
+</div>
 
-    <p><strong>Google Scholar:</strong> Add your profile link</p>
+<div class="publication">
+3. Dry Sliding Wear Performances of AA5052 Hybrid Composite Brake Disc Materials,
+ASME Journal of Tribology, 2023.
+</div>
 
-    <p><strong>LinkedIn:</strong> Add your profile link</p>
+<div class="publication">
+4. Experimental Investigations on AA5154/SiC Composites by Stir Casting,
+Silicon, 2022.
+</div>
+
+<div class="publication">
+5. Synergistic Effect of B4C and Multi-Walled CNT on Aluminum Hybrid Composites,
+Lubricants, 2024.
+</div>
+
+<p style="margin-top:15px;">
+<strong>Complete publication list available upon request or via Google Scholar.</strong>
+</p>
+
+</section>
+
+<section class="section" id="awards">
+<h2>Honors and Awards</h2>
+
+<ul>
+<li>World Top 2% Scientist (Stanford University & Elsevier Ranking, 2025)</li>
+<li>Best Teacher Award, KL University (2024-25)</li>
+<li>Best Teacher Award, KL University (2023-24)</li>
+<li>Ph.D. Scholarship, Ministry of Education, India</li>
+<li>M.Tech. Scholarship, Ministry of Education, India</li>
+<li>Bronze Medal, ICMPC 2022</li>
+<li>GATE Qualified with 94.99 Percentile</li>
+</ul>
+
+</section>
+
+<section class="section">
+<h2>Professional Memberships</h2>
+
+<ul>
+<li>Institution of Engineers (India) – Life Member</li>
+<li>Indian Society for Technical Education (ISTE) – Life Member</li>
+</ul>
+
+</section>
+
+<section class="section" id="contact">
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p><strong>Email:</strong>
+<a href="mailto:prsamal999@gmail.com">prsamal999@gmail.com</a>
+</p>
+
+<p><strong>Email:</strong>
+<a href="mailto:ps23@iitbbs.ac.in">ps23@iitbbs.ac.in</a>
+</p>
+
+<p><strong>Phone:</strong> +91 9937402318</p>
+
+<p><strong>Department:</strong> Mechanical Engineering</p>
+
+<p><strong>Institution:</strong> K L Deemed to be University, Andhra Pradesh, India</p>
+
+</div>
+
 </section>
 
 </div>
 
 <footer>
-    © 2026 Dr. Your Name | Faculty Homepage
+© 2026 Dr. Priyaranjan Samal | Faculty Homepage
 </footer>
 
 </body>
